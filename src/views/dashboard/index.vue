@@ -26,7 +26,7 @@
           </div>
           <div class="stat-item">
             <span class="label">覆盖部门</span>
-            <span class="value">14个</span>
+            <span class="value">10个</span>
           </div>
         </div>
       </div>
