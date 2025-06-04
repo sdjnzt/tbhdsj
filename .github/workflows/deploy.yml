@@ -15,17 +15,28 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
+        cache: 'npm'
         
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+          
     - name: Install Dependencies
-      run: npm install
+      run: npm ci
       
     - name: Build
       run: npm run build
       env:
         VUE_APP_AMAP_KEY: ${{ secrets.AMAP_KEY }}
+        NODE_ENV: production
         
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         branch: gh-pages
-        folder: dist 
+        folder: dist
+        clean: true 

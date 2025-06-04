@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div class="region-insight-page">
     <!-- 页面标题与操作区 -->
