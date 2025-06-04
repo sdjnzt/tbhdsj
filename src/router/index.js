@@ -136,7 +136,7 @@ export const constantRoutes = [
 ]
 
 const createRouter = () => new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes
 })
