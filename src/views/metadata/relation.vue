@@ -53,7 +53,7 @@
             <span>关系覆盖率</span>
           </div>
           <div class="card-body">
-            <div class="card-value">85%</div>
+            <div class="card-value">98%</div>
             <div class="card-footer">
               <span>较上月</span>
               <span class="up">+5%</span>

@@ -13,8 +13,8 @@
     <!-- 平台简介 -->
     <el-card class="intro-card" :body-style="{ padding: '20px' }">
       <div class="intro-header">
-        <h2>太白湖新区大数据平台</h2>
-        <p class="intro-desc">实现全域数据的"通、治、存、管、用"，打造全县统一的大数据体系，支撑太白湖"领导驾驶舱、一网通办、一网统管"全场景业务应用</p>
+        <h2>太白湖一体化大数据平台</h2>
+<!--        <p class="intro-desc">实现全域数据的"通、治、存、管、用"，打造全县统一的大数据体系，支撑太白湖"领导驾驶舱、一网通办、一网统管"全场景业务应用</p>-->
         <div class="intro-stats">
           <div class="stat-item">
             <span class="label">数据总量</span>
@@ -22,7 +22,7 @@
           </div>
           <div class="stat-item">
             <span class="label">接入系统</span>
-            <span class="value">28个</span>
+            <span class="value">10个</span>
           </div>
           <div class="stat-item">
             <span class="label">覆盖部门</span>

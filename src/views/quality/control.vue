@@ -310,12 +310,12 @@ export default {
   data() {
     // 扩展异常数据，增加更多字段
     const anomalyList = [
-      { metric: '数据完整性', value: '85%', threshold: '90%', status: '异常', time: '2025-06-04 09:10', action: '数据源连接异常，已修复。', source: '人口数据' },
+      { metric: '数据完整性', value: '98%', threshold: '90%', status: '异常', time: '2025-06-04 09:10', action: '数据源连接异常，已修复。', source: '人口数据' },
       { metric: '数据准确性', value: '92%', threshold: '95%', status: '异常', time: '2025-06-04 08:50', action: '数据校验失败，已重新校验。', source: '企业数据' },
-      { metric: '数据一致性', value: '88%', threshold: '90%', status: '异常', time: '2025-06-03 17:30', action: '数据同步延迟，已同步。', source: '环境数据' },
+      { metric: '数据一致性', value: '98%', threshold: '90%', status: '异常', time: '2025-06-03 17:30', action: '数据同步延迟，已同步。', source: '环境数据' },
       { metric: '数据及时性', value: '95%', threshold: '95%', status: '正常', time: '2025-06-03 15:20', action: '——', source: '交通数据' },
       { metric: '数据可用性', value: '90%', threshold: '90%', status: '正常', time: '2025-06-03 14:10', action: '——', source: '医疗数据' },
-      { metric: '元数据完整性', value: '88%', threshold: '95%', status: '异常', time: '2025-06-03 13:20', action: '——', source: '企业数据' },
+      { metric: '元数据完整性', value: '98%', threshold: '95%', status: '异常', time: '2025-06-03 13:20', action: '——', source: '企业数据' },
       { metric: '数据标准符合率', value: '91%', threshold: '95%', status: '异常', time: '2025-06-03 12:30', action: '——', source: '人口数据' },
       { metric: '字段唯一性', value: '98%', threshold: '99%', status: '异常', time: '2025-06-02 16:40', action: '——', source: '环境数据' },
       { metric: '数据冗余率', value: '3.2%', threshold: '5%', status: '正常', time: '2025-06-02 14:50', action: '——', source: '交通数据' },
@@ -325,9 +325,9 @@ export default {
     return {
       search: '',
       qualityCards: [
-        { title: '数据完整性', value: '85%', trend: -0.5, type: 'completeness' },
+        { title: '数据完整性', value: '98%', trend: -0.5, type: 'completeness' },
         { title: '数据准确性', value: '92%', trend: 0.2, type: 'accuracy' },
-        { title: '数据一致性', value: '88%', trend: -0.3, type: 'consistency' },
+        { title: '数据一致性', value: '98%', trend: -0.3, type: 'consistency' },
         { title: '数据及时性', value: '95%', trend: 0.1, type: 'timeliness' },
         { title: '数据可用性', value: '90%', trend: 0.0, type: 'availability' },
         { title: '综合质量分', value: '90.0', trend: 0.5, type: 'overall' }

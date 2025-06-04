@@ -33,7 +33,7 @@
             <div class="stat-icon"><i class="el-icon-data-analysis"></i></div>
             <div class="stat-content">
               <div class="stat-label">覆盖率</div>
-              <div class="stat-value">97%</div>
+              <div class="stat-value">100%</div>
               <div class="stat-trend"><span class="trend-up">+5%</span> 同比</div>
             </div>
           </div>
@@ -326,7 +326,7 @@ export default {
           id: 5,
           name: '医疗数据标准', 
           type: '安全', 
-          coverage: '88%', 
+          coverage: '98%',
           status: '草稿',
           owner: '林婉如',
           lastUpdate: '2025-05-28',
