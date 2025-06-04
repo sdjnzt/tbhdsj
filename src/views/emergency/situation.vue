@@ -59,9 +59,17 @@
         <el-table-column prop="type" label="事件类型"/>
         <el-table-column prop="desc" label="描述"/>
         <el-table-column prop="location" label="发生地点"/>
-        <el-table-column prop="level" label="级别"/>
+        <el-table-column prop="level" label="级别">
+          <template slot-scope="scope">
+            <el-tag :type="getLevelType(scope.row.level)">{{ scope.row.level }}</el-tag>
+          </template>
+        </el-table-column>
         <el-table-column prop="responseTime" label="响应时间(分钟)"/>
-        <el-table-column prop="status" label="状态"/>
+        <el-table-column prop="status" label="状态">
+          <template slot-scope="scope">
+            <el-tag :type="getStatusType(scope.row.status)">{{ scope.row.status }}</el-tag>
+          </template>
+        </el-table-column>
         <el-table-column prop="time" label="发生时间"/>
         <el-table-column label="操作">
           <template slot-scope="scope">
@@ -223,6 +231,17 @@ export default {
       if (card.trend > 0) return 'trend-up'
       if (card.trend < 0) return 'trend-down'
       return 'trend-flat'
+    },
+    getLevelType(level) {
+      if (level.includes('Ⅰ级')) return 'danger'
+      if (level.includes('Ⅱ级')) return 'warning'
+      if (level.includes('Ⅲ级')) return 'info'
+      return 'success'
+    },
+    getStatusType(status) {
+      if (status === '已处置') return 'success'
+      if (status === '处置中') return 'warning'
+      return 'info'
     },
     submitReport() {
       this.$refs.reportForm.validate(valid => {
