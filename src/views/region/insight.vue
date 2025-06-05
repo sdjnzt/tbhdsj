@@ -294,6 +294,10 @@ export default {
     this.loadAMap()
     // 自动推送实时动态
     this.realtimeTimer = setInterval(this.pushRealtime, 5000)
+    window.scrollTo(0, 0)
+  },
+  activated() {
+    window.scrollTo(0, 0)
   },
   methods: {
     loadAMap() {
